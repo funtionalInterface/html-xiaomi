@@ -1,13 +1,17 @@
 $(function() {
+	// 导航栏侧边距
 	$("header nav ol").css({
 		'margin-left': '6%'
 	});
+	// 面包屑透明背景
 	$("header nav ol").css({
 		'background': 'transparent'
 	});
+	// 导航栏左右分开
 	$("header nav ol li:eq(6)").css({
 		'margin-right': '45%'
 	});
+	// 导航栏购物按钮格式
 	$("button[class='btn btn-warning']").css({
 		'position': 'absolute',
 		'top': '0px',
@@ -19,6 +23,7 @@ $(function() {
 		'background': '#ff6a00',
 		'color': '#ffffff',
 	})
+	// 面包屑a标签鼠标停留格式
 	$('header a,footer a').on('mouseover', function() {
 		$(this).css({
 			'color': '#000000',
@@ -31,13 +36,14 @@ $(function() {
 		})
 	})
 
-
+	// 面包屑透明背景
 	$("footer nav ol[class='breadcrumb']").css({
 		'background': 'transparent',
 	});
 
 
 })
+// 版权信息鼠标停留动画
 $(function() {
 	$("a[href='http://www.beian.miit.gov.cn/']").on('mouseover', function() {
 		$(this).css('color', 'rgb(255,106,0)')
