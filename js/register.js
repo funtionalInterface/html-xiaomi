@@ -58,7 +58,12 @@ $(function() {
 		'background': "rgb(255,103,0)"
 	})
 })
-
+/**
+ * 表单验证，输出相应信息
+ * @param {Object} el 待验证栏
+ * @param {Object} color 输出信息颜色
+ * @param {Object} msg 输出的信息
+ */
 function check(el, color, msg) {
 	if ($(el).attr('name') == 'code') {
 		if ($(el).next().next().prop("nodeName") == 'FONT') {
@@ -72,6 +77,7 @@ function check(el, color, msg) {
 		} else $(el).after("<font color='" + color + "' style=font-size:12px>" + msg + "</font>")
 	}
 }
+// 添加表单验证事件
 $(function() {
 	$("form input").on('blur', function() {
 		var type = $(this).attr('name')
