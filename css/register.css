@@ -1,0 +1,14 @@
+body {
+	background-color: #14212a;
+}
+
+hr {
+	background-color: rgb(255, 103, 0);
+	padding-top: 1.5px;
+	margin-top: 50px;
+}
+img{
+	margin-left: 10px;
+	margin-right: 20px;
+	height: 30px;
+}

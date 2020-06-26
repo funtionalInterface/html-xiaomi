@@ -1,12 +1,27 @@
-/* 网站头背景 */
-header{
-	background-color: rgb(51,51,51);
+input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: #aab2bd;
+    /* placeholder字体大小  */
+    font-size: 12px;
+    /* placeholder位置  */
+    text-align: left;
 }
-/* 网站尾底对齐 */
+/* 网站头背景 */
+header {
+	background-color: rgb(51, 51, 51);
+}
+
 footer {
-	margin-top: 40%;
+	width: 100%;
+	height: 100px;
+	background-color: #ffffff;
+}
+
+/* 网站尾底对齐 */
+footer>div {
 	margin-left: 40%;
 }
+
 /* 头尾字体格式 */
 header,
 footer nav ol li,
@@ -14,8 +29,9 @@ a {
 	color: #999999;
 	font-size: 12px;
 }
+
 /* 版权信息字体格式 */
-footer > div {
+footer>div {
 	font-weight: bold;
 	font-size: 12px;
 }
