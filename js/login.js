@@ -61,6 +61,9 @@ $(function() {
 		'width': '230px',
 		'height': '35px',
 	})
+	$('form label').css({
+		'color':'#ffffff'
+	})
 	// 验证码
 	$('form input:eq(2)').css({
 		'width': '115px',
