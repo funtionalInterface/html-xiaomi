@@ -17,7 +17,7 @@ $(function() {
 		'top': '0px',
 		'right': '300px',
 		'width': '150px',
-		'height': "41px",
+		'height': "41.5px",
 		'border': '0px',
 		'border-radius': '0px',
 		'background': '#ff6a00',
@@ -26,7 +26,7 @@ $(function() {
 	// 面包屑a标签鼠标停留格式
 	$('header a,footer a').on('mouseover', function() {
 		$(this).css({
-			'color': '#000000',
+			'color': '#ff6a00',
 			'text-decoration': 'underline'
 		})
 	}).on('mouseout', function() {

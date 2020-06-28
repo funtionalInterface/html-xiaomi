@@ -1,11 +1,12 @@
 input::-webkit-input-placeholder {
-    /* placeholder颜色  */
-    color: #aab2bd;
-    /* placeholder字体大小  */
-    font-size: 12px;
-    /* placeholder位置  */
-    text-align: left;
+	/* placeholder颜色  */
+	color: #aab2bd;
+	/* placeholder字体大小  */
+	font-size: 12px;
+	/* placeholder位置  */
+	text-align: left;
 }
+
 /* 网站头背景 */
 header {
 	background-color: rgb(51, 51, 51);
@@ -19,7 +20,7 @@ footer {
 
 /* 网站尾底对齐 */
 /* 版权信息字体格式 */
-footer>div {
+footer > div {
 	margin-top: 15px;
 	padding-top: 23px;
 	margin-left: 40%;
