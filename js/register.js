@@ -5,7 +5,8 @@ $(function() {
 		'background': "#ffffff",
 		'height': "555px",
 		'width': '999px',
-		'margin-bottom': '16px'
+		'margin-bottom': '80px',
+		'margin-top': "100px",
 	})
 	// 注册栏第一行
 	$(".float-left").css({
@@ -109,5 +110,15 @@ $(function() {
 			default:
 				break
 		}
+		if ($("form input:lt(4)").next().text() == '格式正确！格式正确！格式正确！格式正确！' && $("form input:eq(4)").next().next().text() ==
+			'格式正确！') {
+			$('form button').removeAttr('disabled')
+		} else $('form button').attr('disabled', 'disabled')
 	})
+
+	$('form button').on('click', function() {
+		alert("注册成功，正在跳转登录界面~")
+		window.location.href = 'login.html'
+	})
+
 })

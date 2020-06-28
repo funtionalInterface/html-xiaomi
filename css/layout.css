@@ -13,13 +13,18 @@ header {
 
 footer {
 	width: 100%;
-	height: 100px;
+	height: 125px;
 	background-color: #ffffff;
 }
 
 /* 网站尾底对齐 */
+/* 版权信息字体格式 */
 footer>div {
+	margin-top: 15px;
+	padding-top: 23px;
 	margin-left: 40%;
+	font-weight: bold;
+	font-size: 12px;
 }
 
 /* 头尾字体格式 */
@@ -27,11 +32,5 @@ header,
 footer nav ol li,
 a {
 	color: #999999;
-	font-size: 12px;
-}
-
-/* 版权信息字体格式 */
-footer>div {
-	font-weight: bold;
 	font-size: 12px;
 }

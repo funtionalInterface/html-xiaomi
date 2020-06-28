@@ -15,9 +15,9 @@ $(function() {
 	$("button[class='btn btn-warning']").css({
 		'position': 'absolute',
 		'top': '0px',
-		'right': '8%',
-		'width': '10%',
-		'height': "5.5%",
+		'right': '300px',
+		'width': '150px',
+		'height': "41px",
 		'border': '0px',
 		'border-radius': '0px',
 		'background': '#ff6a00',
