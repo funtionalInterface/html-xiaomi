@@ -78,6 +78,10 @@ function check(el, color, msg) {
 		} else $(el).after("<font color='" + color + "' style=font-size:12px>" + msg + "</font>")
 	}
 }
+// 长度检查
+function checkLength(value, length) {
+	return (value == null || value.length == 0 || value.length > length)
+}
 // 添加表单验证事件
 $(function() {
 	$("form input").on('blur', function() {
@@ -86,15 +90,17 @@ $(function() {
 		var condition = "input[name=\'" + type + "\'] "
 		switch (type) {
 			case 'name':
-				if (value == null || value.length == 0 || value.length > 3) check($(condition), 'red', '用户名不得小于3个字符！')
+				if (checkLength(value, 3)) check($(condition), 'red', '用户名不得小于3个字符！')
 				else check($(condition), 'green', '格式正确！')
 				break
 			case 'password':
-				if (value == null || value.length == 0 || value.length < 6) check($(condition), 'red', '密码不得小于6个字符！')
+				if (checkLength(value, 6)) check($(condition), 'red', '密码不得小于6个字符！')
 				else check($(condition), 'green', '格式正确！')
 				break
 			case 'repassword':
-				if (value == null || value.length == 0 || value.length < 6) check($(condition), 'red', '两次密码不一致！')
+				if (checkLength(value, 6) || $("form input:eq(1)").val() == '' || $("form input:eq(1)").val() != $(
+						"form input:eq(2)")
+					.val()) check($(condition), 'red', '两次密码不一致！')
 				else check($(condition), 'green', '格式正确！')
 				break
 			case 'phone':
@@ -103,7 +109,7 @@ $(function() {
 				else check($(condition), 'green', '格式正确！')
 				break
 			case 'code':
-				if (value == null || value.length == 0 || value.length > 5 || value != 'rmcc') check($(condition), 'red',
+				if (value != 'rmcc') check($(condition), 'red',
 					'验证码错误！')
 				else check($(condition), 'green', '格式正确！')
 				break
