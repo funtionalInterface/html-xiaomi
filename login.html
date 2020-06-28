@@ -50,9 +50,38 @@
 						<img src="image/login_bg.jpg" alt="login_bg.jpg">
 					</div>
 					<div class="col-lg-3">
-						<div>
-							
-						</div>
+						<form method="post">
+							<div class="container">
+								<div class="container">
+									&nbsp
+									<div class="float-left">
+										会员登录
+									</div>
+									<div class="float-right">
+										您还不是我们的会员？<a href="register.html">立即注册</a>
+									</div>
+									<hr />
+									<font id="err-msg"></font>
+									<div class="row">
+										<label for="input-first-name">用 户 名：</label>
+										<input type="text" name="name" placeholder="请输入用户名" id="input-first-name">
+									</div>
+									<div class="row">
+										<label for="input-password">密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码：</label>
+										<input type="password" name="password" placeholder="请输入密码" id="input-password">
+									</div>
+
+									<div class="row">
+										<label for="input-code"> 验 证 码：</label>
+										<input type="text" name="code" placeholder="请输入验证码" id="input-code">
+										<img src="image/yanzhengma.jpg" alt="验证码">
+									</div>
+									<div class="row">
+										<button type="button" class=" btn btn-secondary">立即登录</button>
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>

@@ -1,3 +1,15 @@
-body{
+body {
 	background-color: #14212a;
+}
+
+hr {
+	position: relative;
+	background-color: rgb(255, 103, 0);
+	padding-top: 1px;
+	margin-top: 38px;
+	z-index:2;
+}
+#err-msg{
+	color: red;
+	text-align: center;
 }
