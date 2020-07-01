@@ -1,0 +1,152 @@
+.Products {
+	width: 100%;
+	height: 60px;
+	background: rgb(240, 240, 240);
+	margin-bottom: 1%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Products div:nth-child(1) {
+	margin-left: 5%;
+}
+
+.Products div:nth-child(2) {
+	margin-top: 0.5%;
+	margin-right: 10%;
+}
+
+.Products h3 {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	font-family: "宋体";
+}
+
+.Products ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Products li {
+	height: 40px;
+	text-align: center;
+	font-size: 13px;
+	line-height: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Products span {
+	line-height: 36px;
+	color: #383838;
+}
+
+.Products a {
+	text-align: center;
+	color: #383838;
+}
+
+.Details {
+	width: 90%;
+	height: 570px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Details div {
+	flex: 0 0 57%;
+	height: 550px;
+}
+
+.Details div div {
+	height: 60px;
+}
+
+.Details div:nth-child(1) {
+	flex: 0 0 40%;
+}
+
+.Details img {
+	box-shadow: 5px 5px 10px rgb(207, 203, 203), 5px -5px 10px rgb(207, 203, 203), -5px 5px 10px rgb(207, 203, 203), -5px -5px 10px rgb(207, 203, 203);
+}
+
+.Details-right p:nth-child(1) {
+	font-size: 20px;
+	font-weight: 400;
+	text-align: left;
+	line-height: 60px;
+}
+
+.Details-right P:nth-child(2) {
+	width: 70%;
+	font-size: 14px;
+	color: grey;
+}
+
+.Details-right P:nth-child(3) {
+	font-size: 18px;
+	color: #ff6700;
+	margin: 10px 0 20px;
+}
+
+.Details-right P:nth-child(5) a,
+.Details-right P:nth-child(7) a {
+	display: inline-block;
+	width: 280px;
+	height: 50px;
+	margin-top: 10px;
+	background-color: white;
+	border: 1px solid #b0b0b0;
+	text-align: center;
+	line-height: 50px;
+}
+
+.Details-right P:nth-child(5) a:nth-child(2) {
+	margin-left: 5%;
+}
+
+.Details-right P:nth-child(7) a:nth-child(2) {
+	margin-left: 5%;
+}
+
+.Details-right p:nth-child(4),
+.Details-right p:nth-child(6) {
+	margin-top: 3%;
+	margin-bottom: 1%;
+}
+
+
+.attribute {
+	padding-top: 5%;
+	padding-left: 2%;
+}
+
+.attribute span:nth-child(2) {
+	padding-left: 30%;
+	padding-bottom: 2%;
+}
+
+.Details-right button {
+	width: 185px;
+	height: 48px;
+	background-color: #ff6700;
+	color: white;
+	font-size: 17px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	margin-top: 60px;
+}
+
+.btn1 {
+	bottom: 47px;
+}
+
+.btn2 {
+	margin-left: 5%;
+	right: 160px;
+	bottom: 47px;
+}
