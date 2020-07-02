@@ -40,7 +40,7 @@
 					</div>
 					<hr>
 				</div>
-				<form method="post">
+				<form action="login.html" method="get">
 					<div class="container">
 						<div class="row">
 							<label for="input-first-name">用 户 名：</label>
@@ -56,14 +56,14 @@
 						</div>
 						<div class="row">
 							<label for="input-phone">手机号码：</label>
-							<input type="email" name="phone" placeholder="请输入手机号码" id="input-phone" class="form-control form-item">
+							<input type="text" name="phone" placeholder="请输入手机号码" id="input-phone" class="form-control form-item">
 						</div>
 						<div class="row">
 							<label for="input-code"> 验 证 码：</label>
 							<input type="text" name="code"  placeholder="请输入验证码" id="input-code" class="form-control form-item">
 							<img src="image/yanzhengma.jpg" alt="验证码">
 						</div>
-						<button disabled="disabled" type="button" class="btn btn-secondary">注册</button>
+						<button type="submit" class="btn btn-secondary">注册</button>
 					</div>
 				</form>
 			</div>

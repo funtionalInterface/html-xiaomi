@@ -89,16 +89,27 @@ function checkLength(value, length) {
 }
 // 登录事件
 $(function() {
-	$('.row:eq(6) button:eq(0)').on('click', function() {
+	
+	$('form').on('submit',function(){
 		var user = $('form input:eq(0)').val()
 		var password = $('form input:eq(1)').val()
 		var code = $('form input:eq(2)').val()
-		if (checkLength(user, 3)) $("#err-msg").text("用户名不得小于3个字符！")
-		else if (checkLength(password, 6)) $("#err-msg").text("密码不得小于6个字符！")
-		else if (checkLength(code, 4) || code != 'rmcc') $("#err-msg").text("验证码错误！")
-		else {
-			alert("登录成功，正在跳转首页~")
-			window.location.href = 'index.html'
+		if (checkLength(user, 3)){
+			$("#err-msg").text("用户名不得大于3个字符！")
+			return false
+		} 
+		else if (checkLength(password, 6)) {
+			$("#err-msg").text("密码不得大于6个字符！")
+			return false
 		}
+		else if (checkLength(code, 4) || code != 'rmcc'){
+			$("#err-msg").text("验证码错误！")
+			return false
+		} 
+		else {
+			return true
+		}
+		
 	})
+	
 })

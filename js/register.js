@@ -116,15 +116,15 @@ $(function() {
 			default:
 				break
 		}
+	})
+	$('form').on('submit', function() {
 		if ($("form input:lt(4)").next().text() == '格式正确！格式正确！格式正确！格式正确！' && $("form input:eq(4)").next().next().text() ==
 			'格式正确！') {
 			$('form button').removeAttr('disabled')
-		} else $('form button').attr('disabled', 'disabled')
+			alert("注册成功，正在跳转登录界面~")
+			return true
+		} else {
+			return false
+		}
 	})
-
-	$('form button').on('click', function() {
-		alert("注册成功，正在跳转登录界面~")
-		window.location.href = 'login.html'
-	})
-
 })
